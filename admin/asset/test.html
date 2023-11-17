@@ -1,0 +1,105 @@
+<!-- <input type="file" id="file" />
+<label for="file" class="btn-2">upload</label>
+<style>
+    [type="file"] {
+        height: 0;
+        overflow: hidden;
+        width: 0;
+    }
+
+    [type="file"]+label {
+        background: #f15d22;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Rubik', sans-serif;
+        font-size: inherit;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        outline: none;
+        padding: 1rem 50px;
+        position: relative;
+        transition: all 0.3s;
+        vertical-align: middle;
+
+        &:hover {
+            background-color: darken(#f15d22, 10%);
+        }
+
+        &.btn-2 {
+            background-color: #99c793;
+            border-radius: 50px;
+            overflow: hidden;
+
+            &::before {
+                color: #fff;
+                content: "\f382";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 100%;
+                height: 100%;
+                right: 130%;
+                line-height: 3.3;
+                position: absolute;
+                top: 0px;
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                background-color: darken(#99c793, 30%);
+
+                &::before {
+                    right: 75%;
+                }
+            }
+        }
+    }
+</style> -->
+<!-- <div class="rating">
+    <ul>
+        <?php
+        $numStars = 5;
+        for ($i = 0; $i < $numStars; $i++) {
+            echo '<li class="startest"
+                onclick="getStarIndex(' . $i . ')">&#9733;
+            </li>';
+        }
+        ?>
+        <form action="">
+            <input type="text" name="sl" id="slInput">
+        </form>
+        <style>
+            .yellow {
+                color: yellow;
+            }
+
+            .ccc {
+                color: #ccc;
+            }
+        </style>
+        <script>
+            var color;
+
+            function getStarIndex(index) {
+                var stars = document.querySelectorAll(".startest");
+                var clickedStar = stars[index];
+
+                if (clickedStar.classList.contains("yellow")) {
+                    clickedStar.classList.remove("yellow");
+                } else {
+                    clickedStar.classList.add("yellow");
+                }
+                for (var i = 0; i < index; i++) {
+                    stars[i].classList.add("yellow");
+                }
+
+                for (var j = index + 1; j < stars.length; j++) {
+                    stars[j].classList.remove("yellow");
+                }
+
+                document.getElementById("slInput").value = index + 1;
+            }
+        </script>
+    </ul>
+</div> -->

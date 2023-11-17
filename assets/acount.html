@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/acount.css">
+    <title>Thuong mai diện tu</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__top">
+                <div class="header__top--logo">
+                    <img class="header__top--logo--img" src="./img/logo3.png" alt="">
+                </div>
+                <div class="header__top--right">
+                    <div class="header__top--right--search">
+                        <input class="header__top--right--search--input" type="search" name="" id="">
+                        <input class="header__top--right--search--submit" type="submit" value="Tìm kiếm">
+                    </div>
+                    <div class="header__top--right--icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="header__top--right--icon">
+                        <i class="bi bi-bag-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__container">
+
+            <div class="content__container-left">
+                <div class="content__container-left-top">
+                    <img src="../upload/hack.jpg" alt="" class="content__container-left-top-img">
+                    <div class="content__container-left-top-name">
+                        <span class="content__container-left-top-name-span">quanlyadmin</span>
+                        <div class="content__container-left-top-name-icon">
+                            <i class="bi bi-pen"></i> Sửa tài khoản
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content__container-left-content">
+                    <ul class="content__container-left-content-ul">
+                        <li class="content__container-left-content-ul-li">
+                            <a href="" class="content__container-left-content-ul-li-a">
+                                <i class="content__container-left-content-ul-li-a-icon  
+                                bi bi-person"></i> Tài khoản của tôi
+                            </a>
+                        </li>
+                        <li class="content__container-left-content-ul-li">
+                            <a href="" class="content__container-left-content-ul-li-a">
+                                <i class="content__container-left-content-ul-li-a-icon  
+                                bi bi-bag"></i> Đơn hàng
+                            </a>
+                        </li>
+                        <li class="content__container-left-content-ul-li">
+                            <a href="" class="content__container-left-content-ul-li-a">
+                                <i class="content__container-left-content-ul-li-a-icon  
+                                bi bi-bell"></i> Thông báo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__container-right">
+                <div class="content__container-right-top">
+                    <div class="content__container-right-top-p">
+                        Hồ Sơ Của Tôi
+                    </div>
+                    <div class="content__container-right-top-span">
+                        Quản lý thông tin hồ sơ để bảo mật tài khoản
+                    </div>
+                </div>
+                <div class="content__container-right-main">
+                    <div class="content__container-right-main-table">
+                        <form action="" method="post">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Tên đăng nhập
+                                    </td>
+                                    <td class="content__container-right-main-table-tr-td2">
+                                        <input type="text" name="name" value="quanlyadmin">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td class="content__container-right-main-table-tr-td2">
+                                        <input type="email" name="email" id="" value="Hoangnguyen@gmail.com">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Địa chỉ
+                                    </td>
+                                    <td class="content__container-right-main-table-tr-td2">
+                                        <input type="text" name="diachi"
+                                            value="4/464 Nguyễn Văn Quá , Phường Đông Hưng Thuận, Hcm">
+                                    </td>
+                                </tr>
+                            </table>
+                            <input class="submit" type="submit" value="Lưu" onclick="showNotification()">
+                        </form>
+                    </div>
+                    <div class="content__container-right-main-updateimg">
+                        <img class="content__container-right-main-updateimg-img" src="../upload/hack.jpg" alt="">
+                        <input type="file" id="file" name="img" />
+                        <label for="file" class="btn-2">Chọn ảnh</label>
+                    </div>
+
+                </div>
+                <div class="notification" id="notification"><i class="bi bi-check2-all"></i> Thay đổi đã được lưu!</div>
+            </div>
+        </div>
+    </div>
+    <article>
+
+    </article>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<script>
+    function showNotification() {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 3000); // 3 giây sau đó thông báo sẽ tự động ẩn đi
+    }
+</script>

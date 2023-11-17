@@ -1,0 +1,62 @@
+.loginct__main {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.loginct__main-left {
+    padding: 20px;
+    text-align: center;
+    box-shadow: -4px 7px 16px -9px black;
+}
+
+.loginct__main-letf-logo {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.loginct__main-letf-img {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+}
+
+.loginct__main-left-img-backgroud {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.loginct__main-left-img-turnoff {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 100%;
+    height: 97%;
+    border-radius: 10px;
+}
+
+
+/* ............................. */
+.loginct__main-right{
+    padding: 20px 50px;
+}
+.loginct__main-right--p{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.loginct__main-right--label{
+    margin-top: 20px;
+}
+.loginct__main-right--input{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: aqua;
+    margin-top: 5px;
+}

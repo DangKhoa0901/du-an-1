@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <!-- Link chữ-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--  -->
+    <!-- link css -->
+    <link rel="stylesheet" href="css/home.css">
+    <!--  -->
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__box-left">
+            <div class="box-left__logo">
+                <img class="box-left__logo-img" src="image/GOBack.png" alt="">
+            </div>
+            <div class="box-left__menu">
+                <ul class="box-left__menu-ul">
+                    <li class="box-left__menu-ul-li">
+                        <a class="box-left__menu-ul-li-a" href="#">
+                            <i class="fa-solid fa-house box-left__menu-ul-li-a-icon"></i>
+                            <span class="box-left__menu-ul-li-a-span">Trang chủ</span>
+                        </a>
+                    </li>
+
+                    <li class="box-left__menu-ul-li">
+                        <a class="box-left__menu-ul-li-a" href="#">
+                            <i class="box-left__menu-ul-li-a-icon fa-brands fa-shopify"></i>
+                            <span class="box-left__menu-ul-li-a-span">Quản lý đơn hàng</span>
+                        </a>
+                    </li>
+
+                    <li class="box-left__menu-ul-li" onclick="toggleSubMenu(this)">
+                        <a class="box-left__menu-ul-li-a" href="#">
+                            <i class="box-left__menu-ul-li-a-icon fa-solid fa-cubes-stacked"></i>
+                            <span class="box-left__menu-ul-li-a-span">Quản lý sản phẩm</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="box-left__menu-ul-li-menu2">
+                            <ul class="menu2__ul">
+                                <li class="menu2__ul-li">
+                                    <a class="menu2__ul-li-a" href="">Xem sản phẩm</a>
+                                </li>
+                                <li class="menu2__ul-li">
+                                    <a class="menu2__ul-li-a" href="">Sửa sản phẩm</a>
+                                </li>
+                                <li class="menu2__ul-li">
+                                    <a class="menu2__ul-li-a" href="">Thêm sản phẩm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="box-left__menu-ul-li"><a class="box-left__menu-ul-li-a" href="#">
+                            <i class="box-left__menu-ul-li-a-icon fa-solid fa-user"></i>
+                            <span class="box-left__menu-ul-li-a-span">Quản lý khách hàng</span>
+                        </a>
+                    </li>
+
+                    <li class="box-left__menu-ul-li"><a class="box-left__menu-ul-li-a" href="#">
+                            <i class="box-left__menu-ul-li-a-icon fa-solid fa-truck-fast"></i>
+                            <span class="box-left__menu-ul-li-a-span">Quản lý giao hàng</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container__box-right">
+            <div class="box-right__header">
+                <div class="box-right__header-search">
+                    <input class="header-search__input" type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class="fa-solid fa-magnifying-glass header-search__icon"></i>
+                </div>
+                <div class="box-right__header-account">
+                    <i class="fa-solid fa-user box-right__header-account-icon"></i>
+                    <div class="box-right__header-account-link">
+                        <a class="box-right__header-account-link-a" href="#">Đăng Nhập</a>
+                        <span>/</span>
+                        <a class="box-right__header-account-link-a" href="#">Đăng kí</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box-right__main">
+                <div class="box-right__main-item">
+                    <div class="box-right__main-item-revenue">
+                        <i class="fa-solid fa-chart-simple box-right__main-item-revenue-icon"></i>
+                        <span class="box-right__main-item-revenue-span">
+                            190000000
+                        </span>
+                        <p class="box-right__main-item-revenue-p">
+                            Doanh số
+                        </p>
+                    </div>
+                    <div class="box-right__main-item-revenue">
+                        <i class="fa-solid fa-bag-shopping box-right__main-item-revenue-icon"></i>
+                        <span class="box-right__main-item-revenue-span">
+                            300
+                        </span>
+                        <p class="box-right__main-item-revenue-p">
+                            Đơn hàng
+                        </p>
+                    </div>
+                    <div class="box-right__main-item-revenue">
+                        <i class="fa-solid fa-star-half-stroke box-right__main-item-revenue-icon"></i>
+                        <span class="box-right__main-item-revenue-span">
+                            4.0
+                        </span>
+                        <p class="box-right__main-item-revenue-p">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                    </div>
+                    <div class="box-right__main-item-revenue">
+                        <i class="fa-solid fa-users box-right__main-item-revenue-icon"></i>
+                        <span class="box-right__main-item-revenue-span">
+                            1900
+                        </span>
+                        <p class="box-right__main-item-revenue-p">
+                            Theo dõi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function toggleSubMenu(liElement) {
+        const subMenu = liElement.querySelector('.box-left__menu-ul-li-menu2');
+        const chevronIcon = liElement.querySelector('.fa-solid .fa-chevron-down');
+
+        if (subMenu.style.display === 'block') {
+            subMenu.style.display = 'none';
+            chevronIcon.classList.remove('fa-chevron-up');
+            chevronIcon.classList.add('fa-chevron-down');
+        } else {
+            subMenu.style.display = 'block';
+            chevronIcon.classList.remove('fa-chevron-down');
+            chevronIcon.classList.add('fa-chevron-up');
+        }
+    }
+</script>
